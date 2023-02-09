@@ -9,13 +9,16 @@ import "../styles/global.css";
 
 const {
   title = "My Astro Blog",
-  description = "My musings about the astro framework",
+  description = "My musings about the Astro framework",
+  image,
+  frontmatter,
+  robots,
 } = Astro.props;
 ---
 
 <html lang="en">
-  <MainHead title={title} description={description} />
-	<body>
+  <MainHead {title} {description} {image} {frontmatter} {robots} />
+    <body>
     <Nav />
 		<main>
       <slot>Default Text</slot>
