@@ -8,7 +8,8 @@ import sitemap from "@astrojs/sitemap";
 
 // https://astro.build/config
 export default defineConfig({
-  site: 'https://astro-blog-nnh.netlify.app',
+  site: 'https://nopaldonh21.github.io',
+  base: '/astro-blog-cip',
   integrations: [image({
     serviceEntryPoint: '@astrojs/image/sharp'
   }), sitemap()]
